@@ -28,4 +28,7 @@ Imp Links:
 6) How to push code from Android Studio to Github?
 -> https://www.youtube.com/watch?v=XIHNxES2hbQ
    
-7) 
+7) How to Import the GitHub Project to Android Studio?
+-> https://www.youtube.com/watch?v=RjpqsR7GIMg
+
+8) 
