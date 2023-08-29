@@ -21,11 +21,11 @@ Imp Links:
 4) Mobile Apps - Web vs. Native vs. Hybrid
 -> https://www.youtube.com/watch?v=ZikVtdopsfY
 -> https://www.youtube.com/watch?v=EGmpJ5lubok
-
-5) How to push code from Android Studio to Github?
--> https://www.youtube.com/watch?v=XIHNxES2hbQ
    
-6) How to create a new project in Android Studio?
+5) How to create a new project in Android Studio?
 -> https://developer.android.com/codelabs/build-your-first-android-app#0
+
+6) How to push code from Android Studio to Github?
+-> https://www.youtube.com/watch?v=XIHNxES2hbQ
    
 7) 
