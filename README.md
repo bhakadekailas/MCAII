@@ -19,8 +19,8 @@ Imp Links:
 -> https://www.youtube.com/watch?v=sUvDLEO54Rg
 
 4) Mobile Apps - Web vs. Native vs. Hybrid
--> https://www.youtube.com/watch?v=ZikVtdopsfY
--> https://www.youtube.com/watch?v=EGmpJ5lubok
+-> a) https://www.youtube.com/watch?v=ZikVtdopsfY
+   b) https://www.youtube.com/watch?v=EGmpJ5lubok
    
 5) How to create a new project in Android Studio?
 -> https://developer.android.com/codelabs/build-your-first-android-app#0
