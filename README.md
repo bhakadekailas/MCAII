@@ -15,10 +15,17 @@ Imp Links:
 2) iOS Application Architecture
 -> https://www.youtube.com/watch?v=Cwd7GsG3t8w
    
-3) How to push code from Android Studio to Github?
+3) Windows Architecture
+-> https://www.youtube.com/watch?v=sUvDLEO54Rg
+
+4) Mobile Apps - Web vs. Native vs. Hybrid
+-> https://www.youtube.com/watch?v=ZikVtdopsfY
+-> https://www.youtube.com/watch?v=EGmpJ5lubok
+
+5) How to push code from Android Studio to Github?
 -> https://www.youtube.com/watch?v=XIHNxES2hbQ
    
-4) How to create a new project in Android Studio?
+6) How to create a new project in Android Studio?
 -> https://developer.android.com/codelabs/build-your-first-android-app#0
    
-5) 
+7) 
