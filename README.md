@@ -2,9 +2,9 @@
 
 Android Programming
 
-Notes: https://docs.google.com/document/d/1P96T15vj0TcoDrDsktsQF_BTk_UD6USgmvF1G3bkAuM/edit?usp=sharing
+1) Notes: https://docs.google.com/document/d/1P96T15vj0TcoDrDsktsQF_BTk_UD6USgmvF1G3bkAuM/edit?usp=sharing
 
-Github: https://github.com/bhakadekailas/MCAII
+2) Github: https://github.com/bhakadekailas/MCAII
 
 
 
