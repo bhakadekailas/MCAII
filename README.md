@@ -8,8 +8,16 @@ Github: https://github.com/bhakadekailas/MCAII
 
 
 Imp Links:
-1) How to push code from Android Studio to Github?
+1) Android Architecture
+-> https://www.youtube.com/watch?v=H1AN1O2UqW0
+   
+2) iOS Application Architecture
+-> https://www.youtube.com/watch?v=Cwd7GsG3t8w
+   
+3) How to push code from Android Studio to Github?
 -> https://www.youtube.com/watch?v=XIHNxES2hbQ
-2) How to create a new project in Android Studio?
+   
+4) How to create a new project in Android Studio?
 -> https://developer.android.com/codelabs/build-your-first-android-app#0
-3) 
+   
+6) 
