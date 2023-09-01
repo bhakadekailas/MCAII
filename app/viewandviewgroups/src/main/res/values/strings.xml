@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ViewAndViewGroups</string>
+    <string name="enter_first_number">Enter First Number</string>
+    <string name="enter_second_number">Enter Second Number</string>
+    <string name="add">ADD</string>
+    <string name="sub">SUB</string>
+    <string name="mul">MUL</string>
+    <string name="div">DIV</string>
+    <string name="reset">Reset</string>
+    <string name="result">Result</string>
+</resources>
