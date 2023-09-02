@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ViewAndViewGroups</string>
+    <string name="linear_layout">Linear Layout</string>
+    <string name="scroll_view">Scroll View</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="constraint_layout">Constraint Layout</string>
+    <string name="frame_layout">Frame Layout</string>
+    <string name="grid_layout">Grid Layout</string>
+    <string name="table_layout">Table Layout</string>
+    <string name="textview1">TextView1</string>
+    <string name="textview2">TextView2</string>
+    <string name="textview3">TextView3</string>
+    <string name="textview4">TextView4</string>
+    <string name="kailas">Kailas</string>
+    <string name="button">Button</string>
+    <string name="first_button">First Button</string>
+    <string name="my_text_view">My Text View</string>
+    <string name="second_button">Second Button</string>
+</resources>

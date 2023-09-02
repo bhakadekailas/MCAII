@@ -16,4 +16,6 @@ dependencyResolutionManagement {
 rootProject.name = "MCAII"
 include(":app")
 include(":app:activitylifecycle")
-include(":app:viewandviewgroups")
+include(":app:viewgroups")
+include(":app:calculatordemo")
+include(":app:views")
