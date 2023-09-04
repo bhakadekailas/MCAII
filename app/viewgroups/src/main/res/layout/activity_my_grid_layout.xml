@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:columnCount="4"
     android:rowCount="3"
-    tools:context="com.kailas.layoutmanager.MainActivity">
+    tools:context="com.kailas.viewgroups.MainActivity">
 
     <TextView
         android:id="@+id/textView1"

@@ -23,8 +23,9 @@
             android:text="@string/textview3" />
 
         <TextView
-            android:gravity="end"
+            android:gravity="center"
             android:padding="3dip"
             android:text="@string/textview4" />
     </TableRow>
+
 </TableLayout>

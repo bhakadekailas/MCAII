@@ -13,6 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
+        android:inputType="number"
+        android:maxLength="3"
         android:hint="@string/enter_first_number"
         android:padding="15dp">
 
@@ -23,6 +25,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
+        android:inputType="number"
+        android:maxLength="3"
         android:hint="@string/enter_second_number"
         android:padding="15dp">
 

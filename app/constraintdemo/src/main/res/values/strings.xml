@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ConstraintDemo</string>
+    <string name="enter_first_number">Enter First Number</string>
+    <string name="enter_second_number">Enter Second Number</string>
+    <string name="add">Add</string>
+    <string name="sub">Sub</string>
+    <string name="div">Div</string>
+    <string name="result">Result</string>
+    <string name="reset">Reset</string>
+</resources>
