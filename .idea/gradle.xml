@@ -15,6 +15,12 @@
             <option value="$PROJECT_DIR$/app/activitylifecycle" />
             <option value="$PROJECT_DIR$/app/calculatordemo" />
             <option value="$PROJECT_DIR$/app/constraintdemo" />
+            <option value="$PROJECT_DIR$/app/dialogs" />
+            <option value="$PROJECT_DIR$/app/explicitintent" />
+            <option value="$PROJECT_DIR$/app/imagebuttondemo" />
+            <option value="$PROJECT_DIR$/app/implicitintent" />
+            <option value="$PROJECT_DIR$/app/intentfilterforsharetext" />
+            <option value="$PROJECT_DIR$/app/loginregistration" />
             <option value="$PROJECT_DIR$/app/viewgroups" />
             <option value="$PROJECT_DIR$/app/views" />
           </set>

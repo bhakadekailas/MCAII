@@ -12,8 +12,7 @@ public class MainActivity extends AppCompatActivity {
     Button button_simple_demo, button_check_box_demo, button_radio_button_demo,
             button_toggle_button_demo, button_image_button_demo, button_edit_text_demo,
             button_spinner_demo, button_list_view_demo, button_toast, button_scroll_view,
-            button_progress_bar_demo, button_auto_complete_text_view_demo, button_alert_dialog,
-            button_date_picker, button_time_picker_dialog, button_custom_dialog;
+            button_progress_bar_demo, button_auto_complete_text_view_demo;
     private final String TAG = "MainActivity";
 
     @Override
@@ -92,29 +91,6 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, MyAutoCompleteText.class);
             startActivity(intent);
         });
-
-
-        button_alert_dialog.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, MyAlertDialog.class);
-            startActivity(intent);
-        });
-
-
-        button_date_picker.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, MyDatePicker.class);
-            startActivity(intent);
-        });
-
-
-        button_time_picker_dialog.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, MyTimePicker.class);
-            startActivity(intent);
-        });
-
-        button_custom_dialog.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, MyCustomDialog.class);
-            startActivity(intent);
-        });
     }
 
     private void initViews() {
@@ -132,9 +108,5 @@ public class MainActivity extends AppCompatActivity {
         button_scroll_view = findViewById(R.id.button_scroll_view);
         button_progress_bar_demo = findViewById(R.id.button_progress_bar_demo);
         button_auto_complete_text_view_demo = findViewById(R.id.button_auto_complete_text_view_demo);
-        button_alert_dialog = findViewById(R.id.button_alert_dialog);
-        button_date_picker = findViewById(R.id.button_date_picker);
-        button_time_picker_dialog = findViewById(R.id.button_time_picker_dialog);
-        button_custom_dialog = findViewById(R.id.button_custom_dialog);
     }
 }

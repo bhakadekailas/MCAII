@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ImplicitIntent</string>
+    <string name="camera">Camera</string>
+    <string name="share">Share</string>
+    <string name="enter_your_name">Enter Your Name</string>
+</resources>

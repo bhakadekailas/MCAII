@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Dialogs</string>
+    <string name="alert_dialog">Alert Dialog</string>
+    <string name="date_picker_dialog">Date Picker Dialog</string>
+    <string name="time_picker_dialog">Time Picker Dialog</string>
+    <string name="custom_dialog">Custom Dialog</string>
+    <string name="information_dialog">Information Dialog</string>
+    <string name="confirmation_dialog">Confirmation Dialog</string>
+    <string name="show_date_from_calender">Show Date From Calender</string>
+    <string name="show_date_from_date_picker">Change Date By Date Picker</string>
+    <string name="current_date">Current Date :</string>
+    <string name="time">Time :</string>
+    <string name="show_selected_time">Show Selected Time</string>
+    <string name="forget_password_custom_dialog">Forget Password Custom Dialog</string>
+    <string name="enter_your_register_email_id">Enter your register email id</string>
+    <string name="reset">Reset</string>
+</resources>
