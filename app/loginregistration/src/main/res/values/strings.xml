@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">LoginRegistration</string>
+    <string name="welcome_to_imcc">Welcome to IMCC</string>
+    <string name="enter_username">Enter username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
 </resources>
