@@ -22,7 +22,7 @@
         </activity>
         <activity
             android:name=".dashboard.MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
