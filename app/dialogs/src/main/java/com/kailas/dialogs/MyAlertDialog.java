@@ -39,7 +39,7 @@ public class MyAlertDialog extends AppCompatActivity {
     private void showConfirmationDialog() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
         alertDialogBuilder.setTitle("Confirmation Dialog");
-        alertDialogBuilder.setMessage("Are you sure, You wanted to make decision");
+        alertDialogBuilder.setMessage("Are you sure?, You wanted to make decision");
         alertDialogBuilder.setPositiveButton("YES",
                 new DialogInterface.OnClickListener() {
                     @Override
