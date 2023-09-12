@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NotificationDemo</string>
+    <string name="create_notification">Create Notification</string>
+    <string name="this_is_second_activity">This is second activity</string>
+</resources>

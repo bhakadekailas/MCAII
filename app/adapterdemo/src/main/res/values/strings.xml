@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AdapterDemo</string>
+    <string name="base_adapter">Base Adapter</string>
+    <string name="country_name">Country Name</string>
+    <string name="country_code">Country Code</string>
+    <string name="movie_name">Movie Name</string>
+    <string name="release_date">Release Date</string>
+    <string name="rating">Rating</string>
+    <string name="array_adapter">Array Adapter</string>
+    <string name="grid_view_using_adapter">Grid View Using Adapter</string>
+    <string name="list_view_using_adapter">List View Using Adapter</string>
+    <string name="photo_gallery_using_adapter">Photo Gallery Using Adapter</string>
+    <string name="college_name">College Name</string>
+</resources>

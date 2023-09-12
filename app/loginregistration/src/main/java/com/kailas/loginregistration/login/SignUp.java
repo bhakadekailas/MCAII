@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.kailas.loginregistration.R;
+import com.kailas.loginregistration.dataModel.StudentDataModel;
 
 public class SignUp extends AppCompatActivity {
     Button btn_signup, btn_signin;
@@ -49,45 +50,42 @@ public class SignUp extends AppCompatActivity {
     }
 
     private void registration() {
-        if (validate()){
-            String firstNumber = et_first_name.getText().toString();
-            String lastName = et_last_name.getText().toString();
-            String email = et_email.getText().toString();
-            String  mobileNumber = et_mobile.getText().toString();
-            String username = et_usename.getText().toString();
-            String password = et_password.getText().toString();
+        if (validate()) {
+            StudentDataModel studentDataModel = new StudentDataModel();
 
-
-
-
-
+            studentDataModel.setFirstName(et_first_name.getText().toString());
+            studentDataModel.setLastName(et_last_name.getText().toString());
+            studentDataModel.setEmail(et_email.getText().toString());
+            studentDataModel.setMobile(et_mobile.getText().toString());
+            studentDataModel.setUsername(et_usename.getText().toString());
+            studentDataModel.setPassword(et_password.getText().toString());
 
             finish();
         }
     }
 
     private boolean validate() {
-        if (et_first_name.getText().toString().isEmpty()){
+        if (et_first_name.getText().toString().isEmpty()) {
             et_first_name.setError(getResources().getString(R.string.enter_first_name));
             et_first_name.requestFocus();
             return false;
-        }else  if (et_last_name.getText().toString().isEmpty()){
+        } else if (et_last_name.getText().toString().isEmpty()) {
             et_last_name.setError(getResources().getString(R.string.enter_last_name));
             et_last_name.requestFocus();
             return false;
-        } else if (et_email.getText().toString().isEmpty()){
+        } else if (et_email.getText().toString().isEmpty()) {
             et_email.setError(getResources().getString(R.string.enter_email));
             et_email.requestFocus();
             return false;
-        } else if (et_mobile.getText().toString().isEmpty()){
+        } else if (et_mobile.getText().toString().isEmpty()) {
             et_mobile.setError(getResources().getString(R.string.enter_mobile_number));
             et_mobile.requestFocus();
             return false;
-        } else if (et_usename.getText().toString().isEmpty()){
+        } else if (et_usename.getText().toString().isEmpty()) {
             et_usename.setError(getResources().getString(R.string.enter_username));
             et_usename.requestFocus();
             return false;
-        } else if (et_password.getText().toString().isEmpty()){
+        } else if (et_password.getText().toString().isEmpty()) {
             et_password.setError(getResources().getString(R.string.enter_password));
             et_password.requestFocus();
             return false;
