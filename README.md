@@ -15,10 +15,6 @@ Android Programming
 6) Advance Android: https://www.youtube.com/playlist?list=PLRKyZvuMYSIO0jLgj8g6sADnD0IBaWaw2
     
 7) Kotlin: https://www.youtube.com/playlist?list=PLRKyZvuMYSIMW3-rSOGCkPlO1z_IYJy3G
-    
-8) Flutter:
-    
-9) React Native:
 
 
 
@@ -46,4 +42,3 @@ Imp Links:
 8) How to Import the GitHub Project to Android Studio?
 -> https://www.youtube.com/watch?v=RjpqsR7GIMg
 
-9) 
