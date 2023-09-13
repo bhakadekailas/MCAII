@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.kailas.adapterdemo.R;
 
@@ -38,7 +39,7 @@ public class CountryBaseAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View view, ViewGroup viewGroup) {
         LayoutInflater layoutInflater = LayoutInflater.from(context);
-        view = layoutInflater.inflate(R.layout.row_layout_for_base_adapter, viewGroup);
+        view = layoutInflater.inflate(R.layout.row_layout_for_base_adapter, null);
 
         TextView textViewItemName = view.findViewById(R.id.textViewCountryName);
         TextView textViewItemDescription = view.findViewById(R.id.textViewCountryCode);
@@ -47,6 +48,13 @@ public class CountryBaseAdapter extends BaseAdapter {
 
         textViewItemName.setText(countryDataModel.getName());
         textViewItemDescription.setText(String.valueOf(countryDataModel.getCode()));
+
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, countryDataModel.name, Toast.LENGTH_SHORT).show();
+            }
+        });
 
         return view;
     }

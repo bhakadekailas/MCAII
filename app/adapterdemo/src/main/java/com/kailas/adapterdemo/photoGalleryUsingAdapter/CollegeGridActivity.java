@@ -36,6 +36,35 @@ public class CollegeGridActivity extends AppCompatActivity {
         arrayList.add(new CollegeDataModel(R.drawable.modern, "MODERN"));
         arrayList.add(new CollegeDataModel(R.drawable.mit, "MIT"));
         arrayList.add(new CollegeDataModel(R.drawable.imcc, "IMCC"));
+        arrayList.add(new CollegeDataModel(R.drawable.modern, "MODERN"));
+        arrayList.add(new CollegeDataModel(R.drawable.mit, "MIT"));
+        arrayList.add(new CollegeDataModel(R.drawable.imcc, "IMCC"));
+        arrayList.add(new CollegeDataModel(R.drawable.imcc, "IMCC"));
+        arrayList.add(new CollegeDataModel(R.drawable.fc, "FC"));
+        arrayList.add(new CollegeDataModel(R.drawable.modern, "MODERN"));
+        arrayList.add(new CollegeDataModel(R.drawable.mit, "MIT"));
+        arrayList.add(new CollegeDataModel(R.drawable.imcc, "IMCC")); arrayList.add(new CollegeDataModel(R.drawable.modern, "MODERN"));
+        arrayList.add(new CollegeDataModel(R.drawable.mit, "MIT"));
+        arrayList.add(new CollegeDataModel(R.drawable.imcc, "IMCC"));
+        arrayList.add(new CollegeDataModel(R.drawable.imcc, "IMCC"));
+        arrayList.add(new CollegeDataModel(R.drawable.fc, "FC"));
+        arrayList.add(new CollegeDataModel(R.drawable.modern, "MODERN"));
+        arrayList.add(new CollegeDataModel(R.drawable.mit, "MIT"));
+        arrayList.add(new CollegeDataModel(R.drawable.imcc, "IMCC")); arrayList.add(new CollegeDataModel(R.drawable.modern, "MODERN"));
+        arrayList.add(new CollegeDataModel(R.drawable.mit, "MIT"));
+        arrayList.add(new CollegeDataModel(R.drawable.imcc, "IMCC"));
+        arrayList.add(new CollegeDataModel(R.drawable.imcc, "IMCC"));
+        arrayList.add(new CollegeDataModel(R.drawable.fc, "FC"));
+        arrayList.add(new CollegeDataModel(R.drawable.modern, "MODERN"));
+        arrayList.add(new CollegeDataModel(R.drawable.mit, "MIT"));
+        arrayList.add(new CollegeDataModel(R.drawable.imcc, "IMCC")); arrayList.add(new CollegeDataModel(R.drawable.modern, "MODERN"));
+        arrayList.add(new CollegeDataModel(R.drawable.mit, "MIT"));
+        arrayList.add(new CollegeDataModel(R.drawable.imcc, "IMCC"));
+        arrayList.add(new CollegeDataModel(R.drawable.imcc, "IMCC"));
+        arrayList.add(new CollegeDataModel(R.drawable.fc, "FC"));
+        arrayList.add(new CollegeDataModel(R.drawable.modern, "MODERN"));
+        arrayList.add(new CollegeDataModel(R.drawable.mit, "MIT"));
+        arrayList.add(new CollegeDataModel(R.drawable.imcc, "IMCC"));
         return arrayList;
     }
 }

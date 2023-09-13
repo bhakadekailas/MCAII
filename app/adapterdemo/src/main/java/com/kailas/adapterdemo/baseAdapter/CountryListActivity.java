@@ -20,6 +20,8 @@ public class CountryListActivity extends AppCompatActivity {
         listView = findViewById(R.id.listView);
 
         ArrayList<CountryDataModel> itemsArrayList = generateItemsList();
+
+
         CountryBaseAdapter adapter = new CountryBaseAdapter(this, itemsArrayList);
         listView.setAdapter(adapter);
     }
