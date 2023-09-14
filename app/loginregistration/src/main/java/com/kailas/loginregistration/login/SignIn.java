@@ -13,6 +13,10 @@ import android.widget.Toast;
 
 import com.kailas.loginregistration.R;
 import com.kailas.loginregistration.dashboard.MainActivity;
+import com.kailas.loginregistration.dataModel.StudentDataModel;
+import com.kailas.loginregistration.db.MyDbHelper;
+
+import java.util.ArrayList;
 
 public class SignIn extends AppCompatActivity {
 
@@ -43,7 +47,6 @@ public class SignIn extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(context, SignUp.class);
                 startActivity(intent);
-                finish();
             }
         });
     }

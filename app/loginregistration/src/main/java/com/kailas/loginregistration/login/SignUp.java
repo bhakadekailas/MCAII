@@ -11,6 +11,8 @@ import android.widget.EditText;
 
 import com.kailas.loginregistration.R;
 import com.kailas.loginregistration.dataModel.StudentDataModel;
+import com.kailas.loginregistration.db.MyDbHelper;
+import com.kailas.loginregistration.utils.SignUpFormValidation;
 
 public class SignUp extends AppCompatActivity {
     Button btn_signup, btn_signin;
@@ -23,15 +25,11 @@ public class SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         context = SignUp.this;
         setContentView(R.layout.activity_sign_up);
-        btn_signin = findViewById(R.id.btn_signin);
-        btn_signup = findViewById(R.id.btn_signup);
-        et_first_name = findViewById(R.id.et_first_name);
-        et_last_name = findViewById(R.id.et_last_name);
-        et_email = findViewById(R.id.et_email);
-        et_mobile = findViewById(R.id.et_mobile);
-        et_usename = findViewById(R.id.et_usename);
-        et_password = findViewById(R.id.et_password);
+        initViews();
+        clickListeners();
+    }
 
+    private void clickListeners() {
         btn_signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,6 +47,17 @@ public class SignUp extends AppCompatActivity {
         });
     }
 
+    private void initViews() {
+        btn_signin = findViewById(R.id.btn_signin);
+        btn_signup = findViewById(R.id.btn_signup);
+        et_first_name = findViewById(R.id.et_first_name);
+        et_last_name = findViewById(R.id.et_last_name);
+        et_email = findViewById(R.id.et_email);
+        et_mobile = findViewById(R.id.et_mobile);
+        et_usename = findViewById(R.id.et_usename);
+        et_password = findViewById(R.id.et_password);
+    }
+
     private void registration() {
         if (validate()) {
             StudentDataModel studentDataModel = new StudentDataModel();
@@ -60,7 +69,7 @@ public class SignUp extends AppCompatActivity {
             studentDataModel.setUsername(et_usename.getText().toString());
             studentDataModel.setPassword(et_password.getText().toString());
 
-            finish();
+            MyDbHelper myDbHelper = new MyDbHelper(context);
         }
     }
 
@@ -73,7 +82,7 @@ public class SignUp extends AppCompatActivity {
             et_last_name.setError(getResources().getString(R.string.enter_last_name));
             et_last_name.requestFocus();
             return false;
-        } else if (et_email.getText().toString().isEmpty()) {
+        } else if (et_email.getText().toString().isEmpty() && SignUpFormValidation.isEmailValid(et_email.getText().toString())) {
             et_email.setError(getResources().getString(R.string.enter_email));
             et_email.requestFocus();
             return false;

@@ -18,6 +18,8 @@
             <option value="$PROJECT_DIR$/app/constraintdemo" />
             <option value="$PROJECT_DIR$/app/dialogs" />
             <option value="$PROJECT_DIR$/app/explicitintent" />
+            <option value="$PROJECT_DIR$/app/fragmentdemo" />
+            <option value="$PROJECT_DIR$/app/fusionofactivityandfragment" />
             <option value="$PROJECT_DIR$/app/imagebuttondemo" />
             <option value="$PROJECT_DIR$/app/implicitintent" />
             <option value="$PROJECT_DIR$/app/intentfilterforsharetext" />
