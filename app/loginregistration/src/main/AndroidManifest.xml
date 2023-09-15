@@ -9,10 +9,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MCAII">
         <activity
-            android:name=".login.SignUp"
+            android:name=".login.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".login.SignIn"
+            android:name=".login.SignInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".dashboard.MainActivity"
+            android:name=".dashboard.DashBoardActivity"
             android:exported="true" />
     </application>
 

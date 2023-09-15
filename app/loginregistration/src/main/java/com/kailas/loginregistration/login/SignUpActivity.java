@@ -8,13 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.kailas.loginregistration.R;
 import com.kailas.loginregistration.dataModel.StudentDataModel;
 import com.kailas.loginregistration.db.MyDbHelper;
 import com.kailas.loginregistration.utils.SignUpFormValidation;
 
-public class SignUp extends AppCompatActivity {
+public class SignUpActivity extends AppCompatActivity {
     Button btn_signup, btn_signin;
     Context context;
 
@@ -23,7 +24,7 @@ public class SignUp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        context = SignUp.this;
+        context = SignUpActivity.this;
         setContentView(R.layout.activity_sign_up);
         initViews();
         clickListeners();
@@ -33,7 +34,7 @@ public class SignUp extends AppCompatActivity {
         btn_signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, SignIn.class);
+                Intent intent = new Intent(context, SignInActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -70,6 +71,12 @@ public class SignUp extends AppCompatActivity {
             studentDataModel.setPassword(et_password.getText().toString());
 
             MyDbHelper myDbHelper = new MyDbHelper(context);
+            if (myDbHelper.saveStudent(studentDataModel)) {
+                Toast.makeText(context, "Student Saved Successfully", Toast.LENGTH_SHORT).show();
+                finish();
+            } else {
+                Toast.makeText(context, "Something went wrong", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 

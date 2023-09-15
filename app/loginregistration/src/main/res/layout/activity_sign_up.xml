@@ -6,7 +6,7 @@
     android:layout_margin="10dp"
     android:padding="20dp"
     android:layout_height="match_parent"
-    tools:context=".login.SignUp">
+    tools:context=".login.SignUpActivity">
 
     <EditText
         android:id="@+id/et_first_name"

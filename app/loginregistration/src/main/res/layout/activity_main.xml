@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@color/deep_purple"
     android:layout_height="match_parent"
-    tools:context=".dashboard.MainActivity">
+    tools:context=".dashboard.DashBoardActivity">
 
     <TextView
         android:layout_width="wrap_content"

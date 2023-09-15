@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.kailas.loginregistration.R;
 
-public class MainActivity extends AppCompatActivity {
+public class DashBoardActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
