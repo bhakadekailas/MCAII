@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WebServicesDemo</string>
+    <string name="rest_api">Rest API</string>
+    <string name="soap_api">SOAP API</string>
+    <string name="get_request">Get Request</string>
+    <string name="post_api">Post Request</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_job">Enter your Job</string>
+    <string name="result">Result</string>
+    <string name="reset_all">Reset All</string>
+</resources>

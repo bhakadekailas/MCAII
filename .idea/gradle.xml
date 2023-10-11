@@ -18,17 +18,22 @@
             <option value="$PROJECT_DIR$/app/constraintdemo" />
             <option value="$PROJECT_DIR$/app/dialogs" />
             <option value="$PROJECT_DIR$/app/explicitintent" />
+            <option value="$PROJECT_DIR$/app/firebasedemo" />
             <option value="$PROJECT_DIR$/app/fragmentdemo" />
             <option value="$PROJECT_DIR$/app/fusionofactivityandfragment" />
             <option value="$PROJECT_DIR$/app/imagebuttondemo" />
             <option value="$PROJECT_DIR$/app/implicitintent" />
             <option value="$PROJECT_DIR$/app/intentfilterforsharetext" />
+            <option value="$PROJECT_DIR$/app/jsonparsingdemo" />
             <option value="$PROJECT_DIR$/app/loginregistration" />
             <option value="$PROJECT_DIR$/app/menus" />
             <option value="$PROJECT_DIR$/app/notificationdemo" />
             <option value="$PROJECT_DIR$/app/passdatafromoneactivitytoother" />
             <option value="$PROJECT_DIR$/app/viewgroups" />
             <option value="$PROJECT_DIR$/app/views" />
+            <option value="$PROJECT_DIR$/app/webservicesdemo" />
+            <option value="$PROJECT_DIR$/app/webviewdemo" />
+            <option value="$PROJECT_DIR$/app/xmlparsingdemo" />
           </set>
         </option>
       </GradleProjectSettings>

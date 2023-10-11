@@ -5,11 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.kailas.loginregistration.R;
 import com.kailas.loginregistration.dataModel.StudentDataModel;
 import com.kailas.loginregistration.db.MyDbHelper;
@@ -18,8 +19,9 @@ import com.kailas.loginregistration.utils.SignUpFormValidation;
 public class SignUpActivity extends AppCompatActivity {
     Button btn_signup, btn_signin;
     Context context;
-
-    EditText et_first_name, et_last_name, et_email, et_mobile, et_usename, et_password;
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
+    EditText et_first_name, et_last_name, et_email, et_mobile, et_username, et_password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,21 +33,42 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     private void clickListeners() {
-        btn_signin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, SignInActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        btn_signin.setOnClickListener(v -> {
+            Intent intent = new Intent(context, SignInActivity.class);
+            startActivity(intent);
+            finish();
         });
 
-        btn_signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                registration();
-            }
+        btn_signup.setOnClickListener(v -> {
+//                registrationIntoLocalDB();
+            registrationIntoFirebase();
         });
+    }
+
+    private void registrationIntoFirebase() {
+        if (validate()) {
+            StudentDataModel studentDataModel = new StudentDataModel();
+            studentDataModel.setFirstName(et_first_name.getText().toString());
+            studentDataModel.setLastName(et_last_name.getText().toString());
+            studentDataModel.setEmail(et_email.getText().toString());
+            studentDataModel.setMobile(et_mobile.getText().toString());
+            studentDataModel.setUsername(et_username.getText().toString());
+            studentDataModel.setPassword(et_password.getText().toString());
+
+            firebaseDatabase = FirebaseDatabase.getInstance();
+            databaseReference = firebaseDatabase.getReference("user_details");
+
+            databaseReference.child(studentDataModel.getUsername()).setValue(studentDataModel).addOnCompleteListener(task -> {
+                et_first_name.setText("");
+                et_last_name.setText("");
+                et_email.setText("");
+                et_mobile.setText("");
+                et_username.setText("");
+                et_password.setText("");
+                Toast.makeText(SignUpActivity.this, "User added successfully", Toast.LENGTH_SHORT).show();
+                finish();
+            });
+        }
     }
 
     private void initViews() {
@@ -55,11 +78,11 @@ public class SignUpActivity extends AppCompatActivity {
         et_last_name = findViewById(R.id.et_last_name);
         et_email = findViewById(R.id.et_email);
         et_mobile = findViewById(R.id.et_mobile);
-        et_usename = findViewById(R.id.et_usename);
+        et_username = findViewById(R.id.et_username);
         et_password = findViewById(R.id.et_password);
     }
 
-    private void registration() {
+    private void registrationIntoLocalDB() {
         if (validate()) {
             StudentDataModel studentDataModel = new StudentDataModel();
 
@@ -67,7 +90,7 @@ public class SignUpActivity extends AppCompatActivity {
             studentDataModel.setLastName(et_last_name.getText().toString());
             studentDataModel.setEmail(et_email.getText().toString());
             studentDataModel.setMobile(et_mobile.getText().toString());
-            studentDataModel.setUsername(et_usename.getText().toString());
+            studentDataModel.setUsername(et_username.getText().toString());
             studentDataModel.setPassword(et_password.getText().toString());
 
             MyDbHelper myDbHelper = new MyDbHelper(context);
@@ -97,9 +120,9 @@ public class SignUpActivity extends AppCompatActivity {
             et_mobile.setError(getResources().getString(R.string.enter_mobile_number));
             et_mobile.requestFocus();
             return false;
-        } else if (et_usename.getText().toString().isEmpty()) {
-            et_usename.setError(getResources().getString(R.string.enter_username));
-            et_usename.requestFocus();
+        } else if (et_username.getText().toString().isEmpty()) {
+            et_username.setError(getResources().getString(R.string.enter_username));
+            et_username.requestFocus();
             return false;
         } else if (et_password.getText().toString().isEmpty()) {
             et_password.setError(getResources().getString(R.string.enter_password));

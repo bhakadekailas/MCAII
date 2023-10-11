@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<students>
+    <student name="Kailas" batch="2024" course="MCA" division="A" />
+    <student name="Pawan" batch="2023" course="MBA" division="B" />
+    <student name="Amol" batch="2024" course="MCM" division="A" />
+</students>

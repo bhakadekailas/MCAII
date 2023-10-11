@@ -1,0 +1,34 @@
+{
+  "students": [
+    {
+      "name": "Kailas",
+      "batch": "2024",
+      "course": "MCA",
+      "division": "A"
+    },
+    {
+      "name": "Ram",
+      "batch": "2024",
+      "course": "MBA",
+      "division": "A"
+    },
+    {
+      "name": "Shyam",
+      "batch": "2023",
+      "course": "MCA",
+      "division": "A"
+    },
+    {
+      "name": "Ganesh",
+      "batch": "2024",
+      "course": "MCM",
+      "division": "B"
+    },
+    {
+      "name": "Pawan",
+      "batch": "2024",
+      "course": "MCA",
+      "division": "B"
+    }
+  ]
+}
