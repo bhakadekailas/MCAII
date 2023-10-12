@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "923053386784",
+    "project_id": "mcaii-bf5f1",
+    "storage_bucket": "mcaii-bf5f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923053386784:android:0a0c328f5f1c7dfc712045",
+        "android_client_info": {
+          "package_name": "com.kailas.firebasedemo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdgyMHtCUW5DE1BXqhOACruDuRbNJeA_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

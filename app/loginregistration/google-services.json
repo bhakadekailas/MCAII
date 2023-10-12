@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "922894044561",
+    "project_id": "mcaii-4b302",
+    "storage_bucket": "mcaii-4b302.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922894044561:android:28d367362d8500676ede30",
+        "android_client_info": {
+          "package_name": "com.kailas.loginregistration"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7cMeYhjS82phUltM2N5Wm_YvHboRjwrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
