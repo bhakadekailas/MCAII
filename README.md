@@ -39,12 +39,12 @@ Imp Links:
    
    b) https://www.youtube.com/watch?v=EGmpJ5lubok
    
-6) How to create a new project in Android Studio?
+5) How to create a new project in Android Studio?
 -> https://developer.android.com/codelabs/build-your-first-android-app#0
 
-7) How to push code from Android Studio to Github?
+6) How to push code from Android Studio to Github?
 -> https://www.youtube.com/watch?v=XIHNxES2hbQ
    
-8) How to Import the GitHub Project to Android Studio?
+7) How to Import the GitHub Project to Android Studio?
 -> https://www.youtube.com/watch?v=RjpqsR7GIMg
 
