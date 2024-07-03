@@ -10,18 +10,6 @@ Android Programming
 
 4) Advance Java: https://www.youtube.com/playlist?list=PLlhM4lkb2sEjVsbbZ_kiixY5CcR84IQUg
 
-5) Android: https://www.youtube.com/playlist?list=PLlhM4lkb2sEhdllbTIVF0rzD0coCiuHok
-   
-6) Advance Android: https://www.youtube.com/playlist?list=PLRKyZvuMYSIO0jLgj8g6sADnD0IBaWaw2
-    
-7) Kotlin: https://www.youtube.com/playlist?list=PLRKyZvuMYSIMW3-rSOGCkPlO1z_IYJy3G
-
-8) Flutter: https://www.youtube.com/playlist?list=PLjVLYmrlmjGfGLShoW0vVX_tcyT8u1Y3E
-
-9) React Native: https://www.youtube.com/playlist?list=PL8p2I9GklV468O2wk-n8Q1KmtMhnHHj4C
-
-
-
 
 
 Imp Links:
