@@ -3,18 +3,15 @@ package com.kailas.calculatordemo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+    private final String TAG = "MainActivity";
     EditText et_first_no, et_second_no;
     Button addition, substraction, multiplication, division, btn_reset;
     TextView tv_result;
-    private final String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,49 +22,57 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void someClickListener() {
-        addition.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int sum = additionOfTwoNo();
-                Log.e(TAG, "onClick: " + sum);
+        addition.setOnClickListener(v -> {
+            String num1 = et_first_no.getText().toString();
+            String num2 = et_second_no.getText().toString();
+            if (validateET(num1, num2)) {
+                int sum = additionOfTwoNo(num1, num2);
                 tv_result.setText(String.valueOf(sum));
             }
         });
 
-        substraction.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.e(TAG, "onClick: ");
-                int sub = substractionOfTwoNo();
+        substraction.setOnClickListener(v -> {
+            String num1 = et_first_no.getText().toString();
+            String num2 = et_second_no.getText().toString();
+            if (validateET(num1, num2)) {
+                int sub = substractionOfTwoNo(num1, num2);
                 tv_result.setText(String.valueOf(sub));
             }
         });
 
-        multiplication.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.e(TAG, "onClick: ");
-                int mul = multiplicationOfTwoNo();
+        multiplication.setOnClickListener(v -> {
+            String num1 = et_first_no.getText().toString();
+            String num2 = et_second_no.getText().toString();
+            if (validateET(num1, num2)) {
+                int mul = multiplicationOfTwoNo(num1, num2);
                 tv_result.setText(String.valueOf(mul));
             }
         });
 
 
-        division.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.e(TAG, "onClick: ");
-                int division = divisionOfTwoNo();
+        division.setOnClickListener(v -> {
+            String num1 = et_first_no.getText().toString();
+            String num2 = et_second_no.getText().toString();
+            if (validateET(num1, num2)) {
+                int division = divisionOfTwoNo(num1, num2);
                 tv_result.setText(String.valueOf(division));
             }
         });
 
-        btn_reset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                resetControls();
-            }
-        });
+        btn_reset.setOnClickListener(v -> resetControls());
+    }
+
+    private boolean validateET(String no1, String no2) {
+        if (no1.isEmpty()) {
+            et_first_no.setError("Please enter no1");
+            et_first_no.requestFocus();
+            return false;
+        } else if (no2.isEmpty()) {
+            et_second_no.setError("Please enter no2");
+            et_second_no.requestFocus();
+            return false;
+        }
+        return true;
     }
 
     private void resetControls() {
@@ -76,34 +81,26 @@ public class MainActivity extends AppCompatActivity {
         et_first_no.requestFocus();
     }
 
-    private int additionOfTwoNo() {
+    private int additionOfTwoNo(String num1, String num2) {
         int sum;
-        String num1 = et_first_no.getText().toString();
-        String num2 = et_second_no.getText().toString();
         sum = Integer.parseInt(num1) + Integer.parseInt(num2);
         return sum;
     }
 
-    private int substractionOfTwoNo() {
+    private int substractionOfTwoNo(String num1, String num2) {
         int sum;
-        String num1 = et_first_no.getText().toString();
-        String num2 = et_second_no.getText().toString();
         sum = Integer.parseInt(num1) - Integer.parseInt(num2);
         return sum;
     }
 
-    private int multiplicationOfTwoNo() {
+    private int multiplicationOfTwoNo(String num1, String num2) {
         int sum;
-        String num1 = et_first_no.getText().toString();
-        String num2 = et_second_no.getText().toString();
         sum = Integer.parseInt(num1) * Integer.parseInt(num2);
         return sum;
     }
 
-    private int divisionOfTwoNo() {
+    private int divisionOfTwoNo(String num1, String num2) {
         int sum;
-        String num1 = et_first_no.getText().toString();
-        String num2 = et_second_no.getText().toString();
         sum = Integer.parseInt(num1) / Integer.parseInt(num2);
         return sum;
     }
