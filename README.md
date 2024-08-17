@@ -22,6 +22,11 @@ Old Paper: https://drive.google.com/drive/folders/1hd2iQ2fOC_p0qq0sb5L7BMpLo4Zyv
 
 9) React Native: https://www.youtube.com/playlist?list=PL8p2I9GklV468O2wk-n8Q1KmtMhnHHj4C
 
+10) Firebase: 1) SignUp and SignIn = https://www.youtube.com/watch?v=FBE9gdfWXVg
+              2) Push Notification = https://www.youtube.com/watch?v=q6TL2RyysV4
+
+11) Firebase Auth Demo: https://github.com/bhakadekailas/FirebaseAuthenticationDemo
+
 
 
 Imp Links:
