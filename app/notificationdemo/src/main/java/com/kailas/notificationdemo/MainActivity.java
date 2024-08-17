@@ -30,13 +30,14 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @SuppressLint("MissingPermission")
     private void createNotification() {
         Log.e("Kailas", "createNotification: ");
+
 
         Intent intent = new Intent(this, SecondActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0,
                 intent, PendingIntent.FLAG_IMMUTABLE);
+
 
         NotificationChannel channel = new NotificationChannel("MyNotification", "NotificationName", NotificationManager.IMPORTANCE_DEFAULT);
         NotificationManager notificationManager = getSystemService(NotificationManager.class);
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         builder.setSmallIcon(R.drawable.baseline_circle_notifications_24);
         builder.setContentIntent(pendingIntent);
         builder.setAutoCancel(true);
-        builder.setContentText("Hi Kailas, where are u");
+        builder.setContentText("Hi Kailas, where are u ?");
 
         NotificationManagerCompat manager = NotificationManagerCompat.from(this);
         manager.notify(1, builder.build());

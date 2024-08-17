@@ -63,8 +63,8 @@ public class MyDatePicker extends AppCompatActivity {
         cal.set(Calendar.YEAR, year);
         cal.set(Calendar.DAY_OF_MONTH, dayOfMonth);
         cal.set(Calendar.MONTH, month);
-        String DATE_FORMAT = "EE, MMM dd, yyyy";
-//        String DATE_FORMAT = "EEE-dd-MM-yyyy";
+//        String DATE_FORMAT = "EE, MMM dd, yyyy";
+        String DATE_FORMAT = "EEE-dd-MM-yyyy";
 //        String DATE_FORMAT = "E, MMM d, yyyy";
         SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT);
         return sdf.format(cal.getTime());

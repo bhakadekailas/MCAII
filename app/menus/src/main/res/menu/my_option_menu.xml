@@ -15,4 +15,10 @@
         android:icon="@drawable/ic_share"
         android:title="@string/share"
         app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/share2"
+        android:icon="@drawable/ic_share"
+        android:title="@string/share"
+        app:showAsAction="ifRoom"/>
 </menu>

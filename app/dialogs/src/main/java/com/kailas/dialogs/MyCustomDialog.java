@@ -30,6 +30,7 @@ public class MyCustomDialog extends AppCompatActivity {
         final View forgetPasswordView = layoutInflater.inflate(R.layout.forget_password_custom_layout, null);
         final AlertDialog alertDialog = new AlertDialog.Builder(this).create();
         alertDialog.setView(forgetPasswordView);
+
         forgetPasswordView.findViewById(R.id.buttonReset).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

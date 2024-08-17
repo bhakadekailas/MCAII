@@ -5,6 +5,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import androidx.appcompat.widget.PopupMenu;
 
 public class MyPopupMenuActivity extends AppCompatActivity {
     Button buttonShowPopupMenu;
+    TextView tvmy;
     PopupMenu popup;
 
     @Override
@@ -19,10 +21,18 @@ public class MyPopupMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_popup_menu);
         buttonShowPopupMenu = findViewById(R.id.buttonShowPopupMenu);
+        tvmy = findViewById(R.id.tvmy);
         buttonShowPopupMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 showPopup(view);
+            }
+        });
+
+        tvmy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showPopup(v);
             }
         });
 

@@ -40,8 +40,8 @@ public class SignUpActivity extends AppCompatActivity {
         });
 
         btn_signup.setOnClickListener(v -> {
-//                registrationIntoLocalDB();
-            registrationIntoFirebase();
+                registrationIntoLocalDB();
+//            registrationIntoFirebase();
         });
     }
 
@@ -85,7 +85,6 @@ public class SignUpActivity extends AppCompatActivity {
     private void registrationIntoLocalDB() {
         if (validate()) {
             StudentDataModel studentDataModel = new StudentDataModel();
-
             studentDataModel.setFirstName(et_first_name.getText().toString());
             studentDataModel.setLastName(et_last_name.getText().toString());
             studentDataModel.setEmail(et_email.getText().toString());

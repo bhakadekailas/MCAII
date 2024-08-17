@@ -14,7 +14,8 @@ public class MyDbHelper extends SQLiteOpenHelper {
 
     public static String DATABASE_NAME = "student.db";
 
-    public static int DATABASE_VERSION = 1;
+    public static int DATABASE_VERSION = 2;
+  private static final String  FIRST_NAME = "first_name";
 
     public MyDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -22,7 +23,7 @@ public class MyDbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE student_details (id INTEGER PRIMARY KEY AUTOINCREMENT, first_name TEXT, last_name TEXT, email TEXT, mobile_no TEXT, user_name TEXT, password TEXT)");
+        db.execSQL("CREATE TABLE student_details (id INTEGER PRIMARY KEY AUTOINCREMENT, FIRST_NAME TEXT, last_name TEXT, email TEXT, mobile_no TEXT, user_name TEXT, password TEXT)");
     }
 
     @Override
@@ -39,9 +40,10 @@ public class MyDbHelper extends SQLiteOpenHelper {
         contentValues.put("mobile_no", studentDataModel.getMobile());
         contentValues.put("user_name", studentDataModel.getUsername());
         contentValues.put("password", studentDataModel.getPassword());
+
         SQLiteDatabase db = this.getWritableDatabase();
         long id = db.insert("student_details", null, contentValues);
-        db.close();
+//        db.close();
         return id > 0;
     }
 
