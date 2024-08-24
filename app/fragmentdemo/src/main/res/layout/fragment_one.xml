@@ -6,13 +6,12 @@
     android:background="#D40B0B"
     tools:context=".FragmentOne">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:textSize="25sp"
+        android:text="@string/this_is_my_first_fragment"
         android:textColor="@color/white"
-        android:text="@string/this_is_my_first_fragment" />
+        android:textSize="25sp" />
 
 </FrameLayout>
